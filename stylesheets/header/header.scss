@@ -1,0 +1,47 @@
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  background-color: var(--color-gray-900);
+  margin: 0;
+  width: 100%;
+  height: 100px;
+
+  h1 {
+    color: var(--color-gray-100);
+    margin: 0;
+    font-size: 40px;
+
+    .kakao {
+      color: var(--color-kakao);
+    }
+  }
+
+  h2 {
+    margin: 0;
+    color: var(--color-gray-100);
+    font-size: 14px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+    color: var(--color-gray-100);
+    position: absolute;
+    right: 20px;
+
+    .infoBtn {
+      padding: 10px 8px;
+      background-color: rgba(0, 0, 0, 0);
+      border: none;
+      color: white;
+    }
+    :hover {
+      color: var(--color-kakao);
+    }
+  }
+}
