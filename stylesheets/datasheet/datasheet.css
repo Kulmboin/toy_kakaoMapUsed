@@ -1,0 +1,34 @@
+#dataTable {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#dataTable .foodtable {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  width: 100%;
+}
+#dataTable .foodtable th {
+  border: 1px solid black;
+}
+#dataTable .foodtable td {
+  border: 1px solid black;
+}
+#dataTable .foodtable .nameTh {
+  width: 40%;
+  font-weight: 600;
+}
+#dataTable .foodtable .adressTh {
+  width: 20%;
+}
+#dataTable .foodtable .phoneTh {
+  width: 10%;
+}
+#dataTable .foodtable .foodCate {
+  width: 30%;
+}
+
+/*# sourceMappingURL=datasheet.css.map */

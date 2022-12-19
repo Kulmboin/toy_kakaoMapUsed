@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./stylesheets/main.css" />
     <script
       type="text/javascript"
-      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=cdd65336fad90449f053f211ea54e306"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=본인 카카오 key=services"
     ></script>
   </head>
 
@@ -26,7 +26,7 @@
     <!-- 카카오 맵 표시 영역 -->
     <div class="mapContainer">
       <div class="searchContainer">
-        <input class="searchBar" />
+        <input type="text" id="searchBar" name="검색내용" class="searchBar" />
         <button class="searchBtn">검색하기</button>
       </div>
       <div class="mapBtn">
@@ -36,7 +36,7 @@
       <div id="map"></div>
     </div>
 
-    <div id="menu" class="showData"></div>
+    <div id="dataTable" class="showData"></div>
     <script type="module" src="./app.js"></script>
   </body>
 </html>

@@ -1,4 +1,5 @@
 import MapLevel from "./component/mapLevel.js";
+import SearchBar from "./component/searchText.js";
 
 const mapContainer = document.getElementById("map"), // 지도를 표시할 div
   mapOption = {
@@ -8,11 +9,13 @@ const mapContainer = document.getElementById("map"), // 지도를 표시할 div
 
 const $map = new kakao.maps.Map(mapContainer, mapOption);
 
-// $map.forEach((element) => {});
-
 const $zoomInBtn = document.querySelectorAll(".mapControllBtn");
-// console.log($zoomInBtn);
 
 $zoomInBtn.forEach(($zoomInBtn) => {
   MapLevel($zoomInBtn, $map);
 });
+
+// 검색영역 및 테이블 표시
+const $searchBar = document.querySelector(".searchBar");
+const $dataTable = document.querySelector("#dataTable");
+SearchBar($searchBar, $map, $dataTable);
